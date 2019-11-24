@@ -2,7 +2,7 @@
   "name": "web-presence",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://redbugmilk.github.io/redbugmilk.github.io",
+  "homepage": "https://redbugmilk.github.io/cv",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
