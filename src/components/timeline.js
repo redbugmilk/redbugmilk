@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import { Box, Typography, Divider, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import TimelineRight from './timeline.right';
-import TimelineLeft from './timeline.left';
+import TimelineRight from './Timeline.right';
+import TimelineLeft from './Timeline.left';
 import grey from '@material-ui/core/colors/grey';
 
 const useStyles = makeStyles({
