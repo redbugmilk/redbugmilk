@@ -1,7 +1,7 @@
 import React from 'react';
 import uminho from '../assets/images/uminho.png';
 import aalto from '../assets/images/aalto.svg';
-import Timeline from '../components/timeline';
+import Timeline from '../components/Timeline';
 
 const mappingTimeLineInformation = (imageSrc, dates, description, id, position) => ({
     imageSrc,

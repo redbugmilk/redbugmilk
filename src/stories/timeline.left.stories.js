@@ -1,5 +1,5 @@
 import React from 'react';
-import TimelineLeft from '../components/timeline.left';
+import TimelineLeft from '../components/Timeline.left';
 import uminho from '../assets/images/uminho.png';
 
 export default {

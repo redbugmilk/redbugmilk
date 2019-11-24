@@ -1,5 +1,5 @@
 import React from 'react';
-import TimelineRight from '../components/timeline.right';
+import TimelineRight from '../components/Timeline.right';
 
 export default {
     title: 'Timeline - Right side',
