@@ -54,4 +54,12 @@ function App() {
     );
 }
 
-export default App;
+export default {
+    title: 'App wrapper',
+};
+
+export const toStorybook = () => <App />;
+
+toStorybook.story = {
+    name: 'App wrapper',
+};
