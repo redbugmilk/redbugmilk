@@ -6,30 +6,38 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
     root: {
         display: "flex",
-        flex: 1,
         flexDirection: "row",
         justifyContent: "space-around",
         alignItems: "center",
+        width: "50%"
     },
+    chip: {
+        padding: 10
+    }
 });
 
 function InternalMenu({ menus }) {
     const classes = useStyles();
     return (
         <Box
-            p={5}
+            p={3}
+            borderRadius={16}
+            border={1}
             className={classes.root}
             component="div">
             <React.Fragment>
                 {menus.map(item => (
-                        <Chip
-                            clickable
-                            key={item.id}
-                            onClick={() => item.onClick(item.id)}
-                            variant="outlined"
-                            disabled={item.state}
-                            icon={item.icon}
-                            label={item.title} />)
+                    <Chip
+                        className={classes.chip}
+                        clickable
+                        key={item.id}
+                        onClick={() => item.onClick(item.id)}
+                        variant="outlined"
+                        disabled={item.state}
+                        icon={item.icon}
+                        label={item.title}
+                    />
+                )
                 )}
             </React.Fragment>
         </Box>

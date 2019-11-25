@@ -12,7 +12,8 @@ const mappingMenuInformation = (id, state, icon, title) => ({
 
 const generateMenuInformation = () => ([
     mappingMenuInformation(0, true, <MenuBookIcon fontSize="medium" color="action" />, "Education"),
-    mappingMenuInformation(1, false, <MenuBookIcon fontSize="medium" color="action" />, "Specialization")
+    mappingMenuInformation(1, false, <MenuBookIcon fontSize="medium" color="action" />, "Specialization"),
+    mappingMenuInformation(1, false, <MenuBookIcon fontSize="medium" color="action" />, "Certification")
 ]);
 
 export default {
