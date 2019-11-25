@@ -17,7 +17,7 @@ function TimelineRight({ title, children }) {
             p={5}
             className={classes.root}
             component="div">
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h5" gutterBottom>
                 {title}
             </Typography>
             <Divider />
