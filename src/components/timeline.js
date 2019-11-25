@@ -25,7 +25,7 @@ function Timeline({ title, data }) {
                 <Box
                     pl={5}
                     component="div">
-                    <Typography variant="h2" gutterBottom>
+                    <Typography variant="h3" gutterBottom>
                         {title}
                     </Typography>
                 </Box>
@@ -46,7 +46,7 @@ function Timeline({ title, data }) {
                             dates={dates}
                             imageSrc={imageSrc} />
                         <Box width={5} className={classes.divider}></Box>
-                        <TimelineRight title={position} >{description}</TimelineRight>
+                        <TimelineRight title={position}>{description}</TimelineRight>
                     </Box>
                 ))}
             </React.Fragment>
