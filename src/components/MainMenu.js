@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     }
 });
 
-function MainMenu({ menus }) {
+function MainMenu({ menus, onClick, menuSelected }) {
     const classes = useStyles();
     return (
         <Box
@@ -28,10 +28,10 @@ function MainMenu({ menus }) {
                     <Chip
                         className={classes.chip}
                         clickable
-                        key={item.id}
-                        onClick={() => item.onClick(item.id)}
+                        key={`menu.${item.id}`}
+                        onClick={() => onClick(item.id)}
                         variant="outlined"
-                        disabled={item.state}
+                        disabled={item.id === menuSelected}
                         icon={item.icon}
                         label={item.title}
                     />
@@ -45,11 +45,11 @@ function MainMenu({ menus }) {
 MainMenu.propTypes = {
     menus: PropTypes.arrayOf(PropTypes.objectOf([
         PropTypes.string,
-        PropTypes.bool,
-        PropTypes.func,
         PropTypes.node,
         PropTypes.number,
     ])),
+    menuSelected: PropTypes.number,
+    onClick: PropTypes.func,
 }
 
 export default MainMenu;

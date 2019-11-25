@@ -1,23 +1,20 @@
 import React from 'react';
 import { MenuBook, Work, Face } from '@material-ui/icons';
 
-const mappingMenuInformation = (id, state, icon, title) => ({
+const mappingMenuInformation = (id, icon, title) => ({
     id,
-    state,
     icon,
     title,
-    onClick: (id) => console.log("###TESTE### ", id),
 });
 
 const variant = {
-    experience: <Work fontSize="medium" color="action" />,
-    education: <MenuBook fontSize="medium" color="action" />,
-    personal: <Face fontSize="medium" color="action" />,
+    experience: <Work fontSize="small" color="action" />,
+    education: <MenuBook fontSize="small" color="action" />,
+    personal: <Face fontSize="small" color="action" />,
 }
 const generateMenuInformation = () => ([
-    mappingMenuInformation(0, true, variant["experience"], "Experience"),
-    mappingMenuInformation(1, false, variant["education"], "Education"),
-    mappingMenuInformation(1, false, variant["personal"], "Personal")
+    mappingMenuInformation(0, variant["experience"], "Experience"),
+    mappingMenuInformation(1, variant["education"], "Education")
 ]);
 
 export {
