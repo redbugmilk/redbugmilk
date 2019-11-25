@@ -16,13 +16,11 @@ const useStyles = makeStyles({
     }
 });
 
-function InternalMenu({ menus }) {
+function MainMenu({ menus }) {
     const classes = useStyles();
     return (
         <Box
             p={3}
-            borderRadius={16}
-            border={1}
             className={classes.root}
             component="div">
             <React.Fragment>
@@ -44,7 +42,7 @@ function InternalMenu({ menus }) {
     );
 }
 
-InternalMenu.propTypes = {
+MainMenu.propTypes = {
     menus: PropTypes.arrayOf(PropTypes.objectOf([
         PropTypes.string,
         PropTypes.bool,
@@ -54,4 +52,4 @@ InternalMenu.propTypes = {
     ])),
 }
 
-export default InternalMenu;
+export default MainMenu;
