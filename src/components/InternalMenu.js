@@ -16,30 +16,23 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         backgroundColor: theme.palette.background.paper,
         display: 'flex',
-        height: 224,
     },
     tabs: {
         borderRight: `1px solid ${theme.palette.divider}`,
     },
 }));
 
-function InternalMenu({ menus, children }) {
+function InternalMenu({ menus, children, value = 0, onChange }) {
     const classes = useStyles();
-    const [value, setValue] = React.useState(0);
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
-
     return (
         <div className={classes.root}>
             <Tabs
                 orientation="vertical"
                 value={value}
-                onChange={handleChange}
+                onChange={onChange}
                 className={classes.tabs}
             >
-                {menus.map(item => <Tab icon={item.icon} label={item.title} {...a11yProps(item.id)} />)}
+                {menus.map(item => <Tab key={item.id} icon={item.icon} label={item.title} {...a11yProps(item.id)} />)}
             </Tabs>
             {children}
         </div>
@@ -48,6 +41,8 @@ function InternalMenu({ menus, children }) {
 
 InternalMenu.propTypes = {
     children: PropTypes.node,
+    value: PropTypes.any.isRequired,
+    onChange: PropTypes.func,
     menus: PropTypes.array,
 };
 

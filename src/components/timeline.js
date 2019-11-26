@@ -19,8 +19,7 @@ function Timeline({ title, data }) {
         <Box
             p={5}
             width={1}
-            component="div"
-            boxShadow={2}>
+            component="div">
             <React.Fragment>
                 <Box
                     pl={5}

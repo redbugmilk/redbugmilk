@@ -8,7 +8,7 @@ import Timeline from '../components/Timeline';
 const useStyles = makeStyles(theme => ({
     App: {
         display: "flex",
-        flex: 1
+        flex: 1,
     },
     imageMain: {
         position: 'relative',
@@ -51,4 +51,12 @@ function Experience() {
     );
 }
 
-export default Experience;
+export default {
+    title: 'Experience wrapper',
+};
+
+export const toStorybook = () => <Experience />;
+
+toStorybook.story = {
+    name: 'Experience wrapper',
+};

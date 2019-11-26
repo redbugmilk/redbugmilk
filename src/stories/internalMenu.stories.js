@@ -6,7 +6,7 @@ export default {
     title: 'Internal Menu',
 };
 
-export const toStorybook = () => <InternalMenu menus={generateMenuInformation()} />;
+export const toStorybook = () => <InternalMenu menus={generateMenuInformation()} value={1} />;
 
 toStorybook.story = {
     name: 'Internal Menu',

@@ -1,13 +1,19 @@
 import React from 'react';
-import { Container, Paper, CssBaseline, Box } from '@material-ui/core';
+import { Container, Paper, CssBaseline, Box, Divider } from '@material-ui/core';
 import MainMenu from "../components/MainMenu";
 import { generateMenuInformation } from "../mapping/MainMenu";
 import { makeStyles } from '@material-ui/core/styles';
+import Experience from '../controllers/Experience';
 
 const useStyles = makeStyles(theme => ({
     App: {
         display: "flex",
         flex: 1
+    },
+    paper: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent:"center",
     },
     imageMain: {
         position: 'relative',
@@ -21,8 +27,15 @@ const useStyles = makeStyles(theme => ({
     },
     menu: {
         display: "flex",
-        padding: theme.spacing(4),
         justifyContent: "center",
+        backgroundColor: theme.palette.common.white,
+        marginBottom: theme.spacing(2),
+    },
+    experience: {
+        display: "flex",
+        paddingLeft: theme.spacing(4),
+        justifyContent: "center",
+        alignItems:"center",
         backgroundColor: theme.palette.common.white,
         marginBottom: theme.spacing(4),
     },
@@ -39,13 +52,21 @@ function App() {
             <CssBaseline />
             <Container maxWidth="lg">
                 <main>
-                    <Paper className={classes.imageMain}>
-                        <Box height={200} />
+                    <Paper className={classes.paper} >
+                        <Box 
+                            height={200} 
+                            className={classes.imageMain} 
+                            boxShadow={3}
+                        />
                         <Box className={classes.menu}>
                             <MainMenu
                                 menus={generateMenuInformation()}
                                 onClick={handleClick}
-                                menuSelected={menuIndex} />
+                                menuSelected={menuIndex}
+                            />
+                        </Box>
+                        <Box className={classes.experience}>
+                            <Experience />
                         </Box>
                     </Paper>
                 </main>
