@@ -1,13 +1,17 @@
-import React from 'react';
+import React from "react";
 import { generateMenuInformation } from "../mapping/InternalMenu";
-import InternalMenu from '../components/InternalMenu'
+import InternalMenu from "../components/InternalMenu";
 
 export default {
-    title: 'Internal Menu',
+  title: "Internal Menu",
+  component: InternalMenu,
 };
 
-export const toStorybook = () => <InternalMenu menus={generateMenuInformation()} value={1} />;
+const Template = (args) => <InternalMenu {...args} />;
 
-toStorybook.story = {
-    name: 'Internal Menu',
+export const InternalMenuComponent = Template.bind({});
+
+InternalMenuComponent.args = {
+  value: 1,
+  menus: generateMenuInformation(),
 };

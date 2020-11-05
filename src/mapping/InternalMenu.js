@@ -1,10 +1,9 @@
 import React from 'react';
 import { Build, Work, Face, Code} from '@material-ui/icons';
 
-const mappingMenuInformation = (id, icon, title) => ({
-    id,
+const mappingMenuInformation = (icon, label) => ({
     icon,
-    title,
+    label,
 });
 
 const variant = {
@@ -14,10 +13,10 @@ const variant = {
     languages: <Code />,
 }
 const generateMenuInformation = () => ([
-    mappingMenuInformation(0, variant["timeline"], "Experience"),
-    mappingMenuInformation(1, variant["skills"], "Skills"),
-    mappingMenuInformation(2, variant["tools"], "Tools"),
-    mappingMenuInformation(3, variant["languages"], "Languages")
+    mappingMenuInformation(variant["timeline"], "Experience"),
+    mappingMenuInformation(variant["skills"], "Skills"),
+    mappingMenuInformation(variant["tools"], "Tools"),
+    mappingMenuInformation(variant["languages"], "Languages")
 ]);
 
 export {
