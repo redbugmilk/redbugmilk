@@ -12,7 +12,7 @@ const Template = (args) => <InternalMenu {...args} />;
 export const InternalMenuComponent = Template.bind({});
 
 InternalMenuComponent.args = {
-  value: 1,
+  menuSelected: 1,
   menus: generateMenuInformation(),
   onChange: () => console.log("changed"),
 };

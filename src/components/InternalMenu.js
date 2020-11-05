@@ -22,13 +22,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function InternalMenu({ menus, value = 0, onChange }) {
+function InternalMenu({ menus, menuSelected = 0, onChange }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <Tabs
         orientation="vertical"
-        value={value}
+        value={menuSelected}
         onChange={onChange}
         className={classes.tabs}
       >
@@ -42,7 +42,7 @@ function InternalMenu({ menus, value = 0, onChange }) {
 
 InternalMenu.propTypes = {
   /** tab selected value */
-  value: PropTypes.any,
+  menuSelected: PropTypes.any,
   /** function for handle tab */
   onChange: PropTypes.func.isRequired,
   /** Menus content */
