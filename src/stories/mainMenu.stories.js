@@ -1,18 +1,18 @@
-import React from 'react';
-import MainMenu from '../components/MainMenu';
+import React from "react";
+import MainMenu from "../components/MainMenu";
 import { generateMenuInformation } from "../mapping/MainMenu";
 
 export default {
-    title: 'Main Menu',
+  title: "Main Menu",
+  component: MainMenu,
 };
- 
 
-export const toStorybook = () => <MainMenu 
-    menus={generateMenuInformation()} 
-    onClick={()=>console.log("teste")} 
-    menuSelected={0}
-/>;
+const Template = (args) => <MainMenu {...args} />;
 
-toStorybook.story = {
-    name: 'Main Menu',
+export const MainMenuComponent = Template.bind({});
+
+MainMenuComponent.args = {
+  menuSelected: 0,
+  menus: generateMenuInformation(),
+  onClick: () => console.log("teste"),
 };

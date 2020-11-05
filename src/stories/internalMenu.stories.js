@@ -14,4 +14,5 @@ export const InternalMenuComponent = Template.bind({});
 InternalMenuComponent.args = {
   value: 1,
   menus: generateMenuInformation(),
+  onChange: () => console.log("changed"),
 };
