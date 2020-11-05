@@ -1,25 +1,21 @@
-import React from 'react';
-import { Build, Work, Face, Code} from '@material-ui/icons';
+import React from "react";
+import { Build, Work, Face, Code } from "@material-ui/icons";
 
 const mappingMenuInformation = (icon, label) => ({
-    icon,
-    label,
+  icon,
+  label,
 });
 
 const variant = {
-    timeline: <Work />,
-    skills: <Face />,
-    tools: <Build />,
-    languages: <Code />,
-}
-const generateMenuInformation = () => ([
-    mappingMenuInformation(variant["timeline"], "Experience"),
-    mappingMenuInformation(variant["skills"], "Skills"),
-    mappingMenuInformation(variant["tools"], "Tools"),
-    mappingMenuInformation(variant["languages"], "Languages")
-]);
+  Experience: <Work />,
+  Skills: <Face />,
+  Tools: <Build />,
+  Languages: <Code />,
+};
 
-export {
-    mappingMenuInformation,
-    generateMenuInformation
-}
+const generateMenuInformation = () =>
+  Object.entries(variant).map(([key, value]) =>
+    mappingMenuInformation(value, key)
+  );
+
+export { mappingMenuInformation, generateMenuInformation };

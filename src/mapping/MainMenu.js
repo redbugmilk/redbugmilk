@@ -1,23 +1,19 @@
-import React from 'react';
-import { MenuBook, Work, Face } from '@material-ui/icons';
+import React from "react";
+import { MenuBook, Work, Face } from "@material-ui/icons";
 
-const mappingMenuInformation = (id, icon, title) => ({
-    id,
-    icon,
-    title,
+const mappingMenuInformation = (icon, label) => ({
+  icon,
+  label
 });
 
 const variant = {
-    experience: <Work fontSize="small" color="action" />,
-    education: <MenuBook fontSize="small" color="action" />,
-    personal: <Face fontSize="small" color="action" />,
-}
-const generateMenuInformation = () => ([
-    mappingMenuInformation(0, variant["experience"], "Experience"),
-    mappingMenuInformation(1, variant["education"], "Education")
-]);
+  Experience: <Work fontSize="small" color="action" />,
+  Education: <MenuBook fontSize="small" color="action" />,
+  // personal: <Face fontSize="small" color="action" />,
+};
+const generateMenuInformation = () =>
+  Object.entries(variant).map(([key, value]) =>
+    mappingMenuInformation(value, key)
+  );
 
-export {
-    mappingMenuInformation,
-    generateMenuInformation
-}
+export { mappingMenuInformation, generateMenuInformation };

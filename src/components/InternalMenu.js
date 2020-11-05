@@ -45,6 +45,7 @@ InternalMenu.propTypes = {
   value: PropTypes.any,
   /** function for handle tab */
   onChange: PropTypes.func.isRequired,
+  /** Menus content */
   menus: PropTypes.arrayOf(
     PropTypes.shape({
       /** Menu tab's Icon */
