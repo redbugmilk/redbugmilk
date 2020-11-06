@@ -3,10 +3,9 @@ import PersonalAvatar from '../components/Personal.avatar';
 
 export default {
     title: 'Personal Avatar wrapper',
+    component: PersonalAvatar,
 };
 
-export const toStorybook = () => <PersonalAvatar />;
+const Template = () => <PersonalAvatar />;
 
-toStorybook.story = {
-    name: 'Personal Avatar wrapper',
-};
+export const PersonalComponent = Template.bind({});
