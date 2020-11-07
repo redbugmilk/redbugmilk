@@ -1,17 +1,24 @@
-import React from 'react';
-import InternalMenuPanel from '../components/InternalMenuPanel';
+import React from "react";
+import InternalMenuPanel from "../components/InternalMenuPanel";
 
 export default {
-    title: 'Internal Menu panel',
+  title: "Internal Menu panel",
+  component: InternalMenuPanel,
 };
 
-export const toHide = () => <InternalMenuPanel value={1} index={0} children={<p>Item 0</p>} />;
-export const toShow = () => <InternalMenuPanel value={1} index={1} children={<p>Item 1</p>} />;
+const Template = (args) => <InternalMenuPanel {...args} />;
 
-toHide.story = {
-    name: 'Internal Menu - hide',
+export const toHide = Template.bind({});
+toHide.args = {
+  value: 1,
+  index: 0,
+  children: <p>Item 0</p>,
 };
 
-toShow.story = {
-    name: 'Internal Menu - show',
+export const toShow = Template.bind({});
+toShow.args = {
+  ...toHide.args,
+  value: 0,
 };
+
+console.log(toShow.args);
