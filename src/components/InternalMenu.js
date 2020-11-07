@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function InternalMenu({ menus, menuSelected = 0, onChange }) {
+function InternalMenu({ menus, menuSelected = 0, onChange, children }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -36,6 +36,7 @@ function InternalMenu({ menus, menuSelected = 0, onChange }) {
           menus.map((item, index) => <Tab {...item} {...a11yProps(index)} />)
         )}
       </Tabs>
+      {children}
     </div>
   );
 }
@@ -54,6 +55,8 @@ InternalMenu.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** Tab panel*/
+  children: PropTypes.arrayOf(PropTypes.element.isRequired),
 };
 
 export default InternalMenu;

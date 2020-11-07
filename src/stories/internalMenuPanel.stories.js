@@ -20,5 +20,3 @@ toShow.args = {
   ...toHide.args,
   value: 0,
 };
-
-console.log(toShow.args);

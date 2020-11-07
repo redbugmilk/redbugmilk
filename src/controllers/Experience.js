@@ -36,10 +36,9 @@ function Experience() {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-
     return (
         <div className={classes.App}>
-            <InternalMenu menus={generateExperienceInformation()} value={value} onChange={handleChange}>
+            <InternalMenu menus={generateExperienceInformation()} menuSelected={value} onChange={handleChange}>
                 <InternalMenuPanel key={0} index={0} value={value}>
                     <Timeline title="Experience" data={generateTimeLineInformation()} />
                 </InternalMenuPanel>
