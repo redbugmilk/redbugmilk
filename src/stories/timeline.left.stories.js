@@ -1,13 +1,17 @@
-import React from 'react';
-import TimelineLeft from '../components/Timeline.left';
-import uminho from '../assets/images/uminho.png';
+import React from "react";
+import TimelineLeft from "../components/Timeline.left";
+import uminho from "../assets/images/uminho.png";
 
 export default {
-    title: 'Timeline - Left side',
+  title: "Timeline - Left side",
+  component: TimelineLeft,
 };
 
-export const toStorybook = () => <TimelineLeft name="university minho" imageSrc={uminho} dates={["11/2016"]} />;
+const Template = (args) => <TimelineLeft {...args} />;
 
-toStorybook.story = {
-    name: 'Timeline - Left side',
+export const toStorybook = Template.bind({});
+toStorybook.args = {
+  name: "university minho",
+  imageSrc: uminho,
+  dates: ["11/2016"],
 };

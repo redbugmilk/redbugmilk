@@ -4,10 +4,14 @@ import generateTimeLineInformation from '../mapping/TimeLine';
 
 export default {
     title: 'Timeline',
+    component: Timeline
 };
 
-export const toStorybook = () => <Timeline title="Education" data={generateTimeLineInformation()} />;
+const Template = (args)=> <Timeline {...args} />;
 
-toStorybook.story = {
-    name: 'Timeline wrapper',
-};
+export const toStorybook = Template.bind({});
+toStorybook.args = {
+    title: "Education",
+    data: generateTimeLineInformation()
+}
+

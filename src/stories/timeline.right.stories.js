@@ -1,12 +1,15 @@
-import React from 'react';
-import TimelineRight from '../components/Timeline.right';
+import React from "react";
+import TimelineRight from "../components/Timeline.right";
 
 export default {
-    title: 'Timeline - Right side',
+  title: "Timeline - Right side",
+  component: TimelineRight,
 };
 
-export const toStorybook = () => <TimelineRight title="Education"><p>teste</p></TimelineRight>;
+const Template = (args) => <TimelineRight {...args} />;
 
-toStorybook.story = {
-    name: 'Timeline - Right side',
+export const toStorybook = Template.bind({});
+toStorybook.args = {
+  title: "Education",
+  children: <p>teste</p>,
 };
