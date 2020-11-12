@@ -49,13 +49,13 @@ function PersonalAvatar({ onClick }) {
         className={classes.imageMain}
         boxShadow={3}
       />
-      <div className={classes.avatar}>
+      <Button className={classes.avatar} onClick={onClick}>
         <Avatar
           alt={"Profile image"}
           src={profileImage}
           className={classes.bigAvatar}
         />
-      </div>
+      </Button>
     </div>
   );
 }
