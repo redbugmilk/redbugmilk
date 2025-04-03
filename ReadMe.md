@@ -1,41 +1,9 @@
-# Website
+# That's me Joana
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+I have worked as a software developer for nearly a decade. Initially, I started working in a completely different field. Still, I only felt good when I had an opportunity to develop scripts. Gradually, I have discovered my passion for creativity and innovation.
 
-### Installation
+My love for software development has driven me to create a cross-platform mobile app in React Native. As an adventure developer, I've challenged myself to enter the back-end world, evolving and maintaining several microservices in different languages. I learned I liked reading code, understanding it, and maintaining consistency.
 
-```
-$ yarn
-```
+I am now back to mobile development, taking on new challenges and learning exciting new technologies like Kotlin, Kotlin multiplatform, and SwiftUI.
 
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+My journey has taught me that with hard work, determination, and a passion for what you do, anything is possible in the world of software development.
