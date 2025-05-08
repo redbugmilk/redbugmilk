@@ -22,3 +22,5 @@ My love for software development has driven me to create a cross-platform mobile
 I am now back to mobile development, taking on new challenges and learning exciting new technologies like Kotlin, Kotlin multiplatform, and SwiftUI.
 
 My journey has taught me that with hard work, determination, and a passion for what you do, anything is possible in the world of software development.
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=redbugmilk&theme=yellowdark&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
