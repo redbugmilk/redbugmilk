@@ -31,3 +31,9 @@ My journey has taught me that with hard work, determination, and a passion for w
 - [How to kill the idea of perfection? - Geek Girls  Conference 2024](https://www.youtube.com/watch?v=nFpCzyaN70M)
 
 ### :writing_hand: Blog Posts:
+#### Mobile:
+- [From Pixels to Pocket: Embrace the Thrill of a Mobile Career Change!](https://dev.to/redbugmilk/from-pixels-to-pocket-embrace-the-thrill-of-a-mobile-career-change-1plk)
+- [Embark on an Adventure: Your Exciting Roadmap to Mastering the KMP!](https://dev.to/redbugmilk/embark-on-an-adventure-your-exciting-roadmap-to-mastering-the-kmp-2b2j)
+#### Career:
+- [Kickstarting Performance Evaluations](https://medium.com/@redbugmilk/kickstarting-performance-evaluations-82e694ee38fd)
+- [How to kill the idea of Perfection](https://dev.to/redbugmilk/how-to-kill-the-idea-of-perfection-50c6)
