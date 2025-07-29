@@ -1,4 +1,3 @@
-<script><style>h1,h2,h3,h4 { border-bottom: 0; margin: 0;} </style></script>
 <div style="display: flex; flex-direction: column; align-items: center; margin: 50px 0;">
     <img src="./assets/profile.jpg" alt="Joana Correia profile" style="width: 150px; height: 150px; border-radius: 50%; border-style: solid; border-color: #FFBF00; border-width: 2px"/>
     <div style="text-align: center; margin-top: 20px;">
