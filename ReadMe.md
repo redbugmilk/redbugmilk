@@ -1,5 +1,4 @@
 <div style="display: flex; flex-direction: column; align-items: center; margin: 50px 0;">
-    <img src="./assets/profile.jpg" alt="Joana Correia profile" style="width: 150px; height: 150px; border-radius: 50%; border-style: solid; border-color: #FFBF00; border-width: 2px"/>
     <div style="text-align: center; margin-top: 20px;">
         <h1>Joana Correia</h1>
         <h2>Software Developer | Mentor | Speaker</h2>
